@@ -7,10 +7,4 @@
 
 #define POWER_BUTTON_PIN    A3 // PC3
 
-#if defined( ARDUINO_ARCH_AVR )
-#define BA80_REQUIRES_PROGMEM    1
-#endif
-
-
-
 #endif
