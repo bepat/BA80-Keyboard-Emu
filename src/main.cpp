@@ -102,7 +102,7 @@ uint8_t _keyTranslation[] = {
     BA80_KEY_Z, // PS2_KEY_Y (0x59) 
     BA80_KEY_Y, // PS2_KEY_Z (0x5A) 
     BA80_KEY_OE, // PS2_KEY_SEMI (0x5B) 
-    BA80_KEY_IGNORE, // PS2_KEY_BACK (0x5C) 
+    BA80_KEY_ANGLEBRACKET, // PS2_KEY_BACK (0x5C) 
     BA80_KEY_UE, // PS2_KEY_OPEN_SQ (0x5D) 
     BA80_KEY_PLUS, // PS2_KEY_CLOSE_SQ (0x5E) 
     BA80_KEY_ACCENT, // PS2_KEY_EQUAL (0x5F) 
@@ -169,6 +169,8 @@ uint8_t _keyTranslation[] = {
 void setup() 
 {
     _ps2Keyboard.begin(PS2_DATA_PIN, PS2_CLK_PIN);
+    _ps2Keyboard.setNoRepeat(1);
+    _ps2Keyboard.setLock(PS2_LOCK_NUM | PS2_LOCK_CAPS);
     _ba80.begin();
     _powerButton.attach(POWER_BUTTON_PIN, INPUT_PULLUP);
     _powerButton.interval(50);

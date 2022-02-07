@@ -65,7 +65,7 @@
 #define BA80_KEY_I      0x22
 #define BA80_KEY_O      0x2d
 #define BA80_KEY_P      0x3d
-#define BA80_KEY_UE     0x29
+#define BA80_KEY_UE     0x39
 #define BA80_KEY_PLUS   0x49
 #define BA80_KEY_RETURN  0x35
 
