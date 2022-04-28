@@ -6,5 +6,5 @@ I figured out the interfacing and protocol details, used to connect the keyboard
 Details on this can be found [here](doc/BA80-keyboard.md).
 
 # Hardware
-I used an Atmega8 as MCU, but you can use every other AVR which has a hardware USART (for the VDU side) and a hardware interrupt pin (for the PS2 side).
+I used an Atmel Atmega8 as MCU, but you can use every other AVR which has a hardware USART (for the VDU side) and a hardware interrupt pin (for the PS2 side).
 The assignment is done in the `config.h` file.
