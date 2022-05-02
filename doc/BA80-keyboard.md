@@ -1,6 +1,6 @@
 # BA80 Keyboard
 ## Interface
-The interface between the Keyboard and the VDU (Visual Display Unit) is a 5V TTL UART with the following parameters:
+The interface between the Keyboard and the VDU (Visual Display Unit) is a 5V logic level UART with the following parameters:
 ```text
 4800 Baud
 8 Data bits
