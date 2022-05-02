@@ -13,14 +13,15 @@ The button shorts the NEN signal to ground. After this, the main power supply is
 The keyboard is connected to the VDU through a 6-pin Tuchel connector with the following pinout:
 ```text
 
-        _____ _____
-      /      V      \         1
-     / 1 O       O 5 \        2
-    |      6 O        |       3
-    |  2 O       O 4  |       4
-     \     3 O       /        5
-       \ _________ /          6
-       
+        _____ _____           Pin no.   cable color     signal
+      /      V      \         1         white           TX data (keyboard to BA80)
+     / 5 O       O 1 \        2         yellow          +24V (not used)
+    |      6 O        |       3         gray            Ground
+    |  4 O       O 2  |       4         green           power on
+     \     3 O       /        5         brown           RX data (BA80 to keyboard)
+       \ _________ /          6         pink            +5V
+
+view to soldering side of the connector
 ```
 
 ## Logic Analyzer Captures
